@@ -40,7 +40,7 @@ const EnhancedChatRoom = () => {
     }
 
     const serverUrl = process.env.REACT_APP_SERVER_URL || 'http://localhost:3001';
-    socketRef.current = io('https://open-chat-navy.vercel.app', {
+    socketRef.current = io('https://open-chat-sooty.vercel.app', {
       reconnection: true,
       reconnectionDelay: 1000,
       reconnectionDelayMax: 5000,
