@@ -8,7 +8,12 @@ const server = http.createServer(app);
 const io = socketIo(server, {
   maxHttpBufferSize: 1e7, // ~10MB - voice messages (base64 audio) are much larger than text
   cors: {
-    origin: ['http://localhost:3000', 'http://localhost:3001', 'http://127.0.0.1:3000'],
+    origin: [
+      'http://localhost:3000',
+      'http://localhost:3001',
+      'http://127.0.0.1:3000',
+      'https://open-chat-453tz72uc-abhiram-295a.vercel.app'
+    ],
     methods: ['GET', 'POST'],
     credentials: true
   }
