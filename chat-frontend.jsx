@@ -34,7 +34,7 @@ const ChatRoom = () => {
       return;
     }
 
-    socketRef.current = io('https://open-chat-sooty.vercel.app', {
+    socketRef.current = io('https://open-chat-production.up.railway.app', {
       reconnection: true,
       reconnectionDelay: 1000,
       reconnectionDelayMax: 5000,
